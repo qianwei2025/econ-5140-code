@@ -8,4 +8,6 @@ pandas-datareader>=0.10.0
 yfinance>=0.2.0  # Optional: for stock market data (will use synthetic data if not available)
 scikit-learn>=1.0.0  # For LinearRegression and metrics
 requests>=2.25.0  # For downloading datasets from URLs
+prophet>=1.1.0  # Optional: for Lesson 5 (Facebook's Prophet forecasting tool)
+tbats>=1.1.0  # Optional: for Lesson 5 (TBATS model for multiple seasonalities)
 
