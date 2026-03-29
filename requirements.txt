@@ -3,11 +3,15 @@ pandas>=1.3.0
 matplotlib>=3.3.0
 seaborn>=0.11.0
 scipy>=1.7.0
+pysyncon>=1.5.0,<2  # Synthetic control + AugSynth (Python; https://github.com/sdfordham/pysyncon)
+# synthdid (Lesson 12 SDID): do NOT `pip install synthdid` alone — it pins numpy==1.23.5 and breaks on Python 3.12+.
+# After the lines above are installed, run:  pip install "synthdid==0.10.1" --no-deps
 statsmodels>=0.13.0
 pandas-datareader>=0.10.0
 yfinance>=0.2.0  # Optional: for stock market data (will use synthetic data if not available)
 scikit-learn>=1.0.0  # For LinearRegression and metrics
 requests>=2.25.0  # For downloading datasets from URLs
+pyreadr>=0.5.0  # Optional: scripts/build_smoking_prop99_csv.py (tidysynth smoking.rda → CSV)
 prophet>=1.1.0  # Optional: for Lesson 5 (Facebook's Prophet forecasting tool)
 tbats>=1.1.0  # Optional: for Lesson 5 (TBATS model for multiple seasonalities)
 
